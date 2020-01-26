@@ -11,7 +11,7 @@ class Triangle
   end
   
   def kind 
-    if side_a <= 0 || side_b <= 0 || side_c <= 0
+    if valid? == false 
      # binding.pry
       raise TriangleError
     elsif side_a == side_b && side_b == side_c
@@ -29,7 +29,11 @@ class Triangle
         false 
         elsif s.side_a < s.side_b && s.side_a < s.side_c ||
         s.side_b < s.side_a && s.side_b < s.side_c ||
-        
+        s.side_c < s.side_b && s.side_c < s.side_a
+        false 
+        elsif
+        true 
+      end
     
     
   end
