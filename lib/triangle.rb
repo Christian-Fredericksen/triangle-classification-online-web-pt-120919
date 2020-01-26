@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind 
-    if side_a =< 0 || side_b =< 0 || side_c =< 0 
+    if side_a < 1 || side_b < 1 || side_c < 1 
       begin
         raise TriangleError
       rescue TriangleError => error 
