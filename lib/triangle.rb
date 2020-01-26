@@ -27,7 +27,8 @@ class Triangle
     all_sides.each do |s|
       if s.side_a <= 0 || side_b <= 0 || side_c <= 0
         false 
-        elsif s.side_a < s.side_b && 
+        elsif s.side_a < s.side_b && s.side_a < s.side_c ||
+        
     
     
   end
