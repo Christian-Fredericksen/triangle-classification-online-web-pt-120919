@@ -24,7 +24,7 @@ class Triangle
   end
   
   def valid?
-    all_sides.each{|s| s
+    all_sides.each{|s| if s.side_a <= 0 
     
   end
   
