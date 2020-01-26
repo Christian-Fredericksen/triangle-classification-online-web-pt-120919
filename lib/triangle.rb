@@ -24,7 +24,11 @@ class Triangle
   end
   
   def valid?
-    all_sides.each{|s| if s.side_a <= 0 
+    all_sides.each do |s|
+      if s.side_a <= 0 || side_b <= 0 || side_c <= 0
+        false 
+        elsif s.side_a < s.side_b && 
+    
     
   end
   
