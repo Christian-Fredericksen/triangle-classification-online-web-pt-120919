@@ -24,7 +24,7 @@ class Triangle
   
   def valid?
     all_sides.each do |s|
-      binding.pry 
+      #binding.pry 
       if s <= 0
         return false 
       end
