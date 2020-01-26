@@ -1,6 +1,6 @@
 require "pry"
 class Triangle
-  attr_accessor :side_a, :side_b, :side_c, :all_sides
+  attr_accessor :side_a, :side_b, :side_c, :all_sides,
   :equilateral, :isosceles, :scalene
     
   def initialize(side_a, side_b, side_c)
