@@ -31,8 +31,8 @@ class Triangle
     end
        if side_a + side_b <= side_c ||
          side_b + side_c <= side_a ||
-         
-        false 
+         side_c + side_a <= side_b
+        return false 
       else 
         true 
       end
