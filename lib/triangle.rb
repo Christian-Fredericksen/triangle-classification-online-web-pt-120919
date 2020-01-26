@@ -11,8 +11,7 @@ class Triangle
   end
   
   def kind 
-    if valid? == false 
-     # binding.pry
+    if valid? == false
       raise TriangleError
     elsif side_a == side_b && side_b == side_c
       return :equilateral
@@ -25,13 +24,14 @@ class Triangle
   
   def valid?
     all_sides.each do |s|
-      if s.side_a <= 0 || side_b <= 0 || side_c <= 0
+      binding.pry 
+      if s.side_a <= 0 || s.side_b <= 0 || s.side_c <= 0
         false 
         elsif s.side_a < s.side_b && s.side_a < s.side_c ||
         s.side_b < s.side_a && s.side_b < s.side_c ||
         s.side_c < s.side_b && s.side_c < s.side_a
         false 
-        elsif
+      else 
         true 
       end
     end
