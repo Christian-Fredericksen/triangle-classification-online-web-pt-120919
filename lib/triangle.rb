@@ -25,11 +25,12 @@ class Triangle
   def valid?
     all_sides.each do |s|
       binding.pry 
-      if s.side_a <= 0 || s.side_b <= 0 || s.side_c <= 0
-        false 
-        elsif s.side_a < s.side_b && s.side_a < s.side_c ||
-        s.side_b < s.side_a && s.side_b < s.side_c ||
-        s.side_c < s.side_b && s.side_c < s.side_a
+      if s <= 0
+        return false 
+      end
+    end
+       if side_a + side_b <= side_c ||
+         
         false 
       else 
         true 
