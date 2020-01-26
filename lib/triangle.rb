@@ -34,8 +34,6 @@ class Triangle
         elsif
         true 
       end
-    
-    
   end
   
   class TriangleError < StandardError
