@@ -13,6 +13,8 @@ class Triangle
       return :equilateral
     elsif side_a == side_b || side_b == side_c
       return :isosceles
+    end
+      
   end
   
   
